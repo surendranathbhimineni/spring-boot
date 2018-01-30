@@ -30,7 +30,7 @@ public class BookCategoryController {
 		for (BookCategory iterable : bookCategoryRepository.findAll()) {
 			bookCategoryList.add(iterable);
 		}
-		bookCategoryList.stream().forEach(a -> Collections.sort(a.getBooks()));
+		// bookCategoryList.stream().forEach(a -> Collections.sort(a.getBooks()));
 		return bookCategoryList;
 	}
 
